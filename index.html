@@ -1,1 +1,186 @@
-Hello, world
+<html>
+<head>
+<title>Bert Maher, University of Texas at Austin</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<div id="outer">
+<div id="main">
+<div class="section">
+<img src="pics/bert-sfbay.jpg" width="400px" style="float:right;margin-bottom:20px">
+<h1 style="margin-left:-20px">Bertrand A. Maher</h1>
+Doctoral Candidate<br>
+<a href="http://www.cs.utexas.edu/">Department of Computer Science<a/><br>
+<a href="http://www.cs.utexas.edu/">University of Texas at Austin</a><br>
+<br>
+<a href="cv-maher.pdf">My Curriculum Vitae</a>
+</div>
+
+<h2 style="clear:right">Research Interests<a name="research"></a></h2>
+<div class="section">
+<p>
+Broadly speaking, I am interested in architecture, compilers, and
+programming languages.  Since those three topics cover a good chunk of
+systems research, I'll narrow it down a bit: I'm interested in the
+direction that computer architecture will take now that frequency
+scaling has largely ended and power limitations are limiting the
+application of conventional techniques for increasing
+instruction-level parallelism.  To meet this challenge, we'll need a
+combination of efficient architectures; languages that allow
+programmers to express parallelism, whether explicitly or implicitly;
+and compilers that can generate efficient code to manage this
+parallelism.
+</p>
+<p>
+
+In my dissertation research, I've investigated how best to build a
+compiler for an efficient parallel architecture.  Explicit Data Graph
+Execution architectures, exemplified by the <a
+href="http://www.cs.utexas.edu/users/cart/trips/">TRIPS processor</a>
+and the TFlex microarchitecture, allow the compiler to specify
+inter-instruction communication within large blocks of instructions.
+The processor fetches and commits these blocks atomically and
+sequentially, which makes it easy to program using existing high-level
+languages like C.  Since blocks are central to efficient execution on
+such processors, my research has focused on compiler algorithms and
+policies for creating blocks, and on developing microarchitectural
+techniques for executing blocks efficiently.
+
+<!--Speaking broadly, my interests are in compilers and programming
+languages for high-performance architectures, and vice versa. Speaking
+deeply, I am researching compilation techniques for structured ISAs.
+TRIPS is an example of such an ISA.
+-->
+</div>
+
+<h2><a name="publications"></a>Publications</h2>
+<div class="section">
+<h3>Conferences</h3>
+<ul>
+<li class="publist"><a href="pubs/asplos09.pdf">An Evaluation of the TRIPS Computer System</a> (ASPLOS 2009)<br>
+M. Gebhart, B. Maher, K. Coons, J. Diamond, P. Gratz, M. Marino, N. Ranganathan, B. Robatmili, A. Smith, J. Burrill, S. Keckler, D. Burger, K. McKinley<br>
+<b>Best Paper Award</b>
+<li class="publist"><a href="pubs/pact08.pdf">Feature Selection and Policy Optimization for Distributed Instruction Placement Using Reinforcement Learning</a> (PACT 2008)<br>
+K. Coons, B. Robatmili, M. Taylor, B. Maher, D. Burger, K. McKinley
+<li class="publist"><a href="pubs/micro06.pdf">Merging Head and Tail Duplication for Convergent Hyperblock Formation</a> (MICRO 2006)<br>
+B. Maher, A. Smith, D. Burger, K. McKinley
+<li class="publist"><a href="pubs/cgo06.pdf">Compiling for EDGE Architectures</a> (CGO 2006)<br>
+A. Smith, J. Burrill, J. Gibson, B. Maher, N. Nethercote, B. Yoder, D. Burger, K. McKinley
+</ul>
+<h3>Workshops</h3>
+<ul>
+<li class="publist"><a href="pubs/mobs07.pdf">Software Infrastructure and Tools for the TRIPS Prototype</a> (MOBS 2007)<br>
+B. Yoder, J. Burrill, et al.
+<li class="publist"><a href="pubs/odes06.pdf">Evaluation and Optimization of Signal Processing Kernels on the TRIPS Architecture</a> (ODES 2006)<br>
+K. Bush, M. Gebhart, E. Wei, N. Yudin, B. Maher, N. Nethercote, D. Burger, S. Keckler
+</ul>
+</h3>
+<h3>Technical Reports</h3>
+<ul>
+<li class="publist"><a href="pubs/tr08-34.pdf">Optimal Huffman Tree-Height Reduction for Instruction-Level Parallelism</a> (TR-08-34)<br>
+K. Coons, W. Hunt, B. Maher, D. Burger, K. McKinley
+</ul>
+</div>
+
+<h2><a name="awards"></a>Awards</h2>
+<div class="section">
+<ul>
+<li>Best Paper Award at ASPLOS 2009 for "An Evaluation of the TRIPS Computer System"
+<li>Microelectronics and Computer Development Fellowship, 2004
+<li>College of Natural Sciences Dean's Excellence Award, 2004
+</ul>
+</div>
+
+<h2><a name="projects"></a>Research Projects and Groups</h2>
+<div class="section">
+<ul>
+<li><a href="http://www.cs.utexas.edu/users/cart/trips/">The TRIPS Project</a>
+<li><a href="http://www.cs.utexas.edu/users/cart/Scale/">Scale Compiler</a>
+<li><a href="http://www.cs.utexas.edu/users/cart/">Computer Architecture and Technology Laboratory (CART)</a>
+<li><a href="http://www.cs.utexas.edu/users/speedway/">Speedway Compiler Research Group</a>
+<li><a href="http://z.cs.utexas.edu/wiki/speedway.wiki/PLLunch/">Programming Languages Lunch</a>
+</ul>
+</div>
+
+<h2><a name="education"></a>Education</h2>
+<div class="section">
+<b>Ph.D. in Computer Science<br></b>
+University of Texas at Austin, expected graduation August 2010<br>
+Advisors: <a href="http://www.cs.utexas.edu/users/dburger/">Doug Burger</a>
+and  <a href="http://www.cs.utexas.edu/users/mckinley/">Kathryn McKinley</a><br>
+<br>
+<b>M.S. in Computer Science<br></b>
+University of Texas at Austin, May 2007<br>
+<br>
+<b>B.S. in Electrical Engineering and Computer Science<br></b>
+Yale University, May 2004
+<it>magna cum laude</it>, with distinction in the major
+</div>
+
+<h2><a name="work"></a>Work Experience</h2>
+<div class="section">
+<p>
+<b>Sun Microsystems Labs</b>, Research Intern, Summer 2009<br> At Sun,
+I worked on <a
+href="http://research.sun.com/projects/dashboard.php?id=193">Project
+Portmeirion</a>, which has the goal of implementing complex commercial
+ISAs such as x64 and SPARC using dynamic translation.  I implemented
+support for x86 SSE floating point in the front-end of the Portmeirion
+JIT compiler, and in the process realized that we would need an
+industrial strength testing harness to ensure correctness.  The
+front-end tester that I developed uses a code-coverage approach to
+explore the entire space of opcodes, and compares the results of
+virtualized execution with native execution.
+</p>
+<p>
+<b>Intel Corporation</b>, Research Intern, Summer 2008<br>
+I worked with the <a href="http://www.pintool.org">Pin</a> group to
+develop tools for finding runtime differences in nondeterministic
+programs.  The approach I developed dynamically instruments two
+running processes, and produces lightweight control- and data-flow
+traces for online or offline comparison.  Finding these differences
+can be a powerful debugging tool, both for isolating nondeterministic
+bugs, and for quickly finding errors in simulators by comparing
+execution to hardware.
+</p>
+</div>
+
+<h2><a name="fun"></a>Fun</h2>
+
+<div class="section">
+I play classical and orchestral percussion, <a
+href="http://youtube.com/watch?v=2q8F0RbeyPI">drumset</a>, and <a
+href="http://www.keepaustinloud.com/">marching percussion</a>.  I used
+to play in the <a href="http://www.yale.edu/yaleband/">Yale Concert
+Band</a> and various other college orchestras.
+</div>
+
+</div> <!-- main -->
+
+<div id="rightcontent">
+<h3>Contents</h3>
+<ul style="list-style-type:none">
+<li><a href="#research">Research Interests</a>
+<li><a href="#publications">Publications</a>
+<li><a href="#awards">Awards</a>
+<li><a href="#projects">Research Projects</a>
+<li><a href="#education">Education</a>
+<li><a href="#work">Work Experience</a>
+<li><a href="#fun">Fun</a>
+</ul>
+
+<h3>Contact Information</h3>
+<div class="section">
+<a href="mailto:bmaher@cs.utexas.edu">bmaher@cs.utexas.edu</a><br>
+ACES 3SEo3E<br>
+(512) 232-7434<br>
+Taylor Hall 2.124<br>
+1 University Station C0500<br>
+Austin, TX 78712-0233<br>
+</div>
+</div> <!-- rightcontent -->
+
+</div> <!-- outer -->
+
+</body>
+</html>
